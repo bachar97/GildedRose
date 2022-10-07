@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gildedrose.GildedRoseTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2022-10-06T12:07:07" hostname="vm-etu-basabra.local.isima.fr" time="0.119">
+  <properties/>
+  <testcase name="Test that Quality is less than 50 and SellIn is strictly less than 6" classname="com.gildedrose.GildedRoseTest" time="0.035"/>
+  <testcase name="Test that Quality is less than 50" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that SellIn is less than 11" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that Quality is less than 50 and name is not Sulfuras" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that quality is strictly less than 50 while name is Aged Brie" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that if not Backstage quality = 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that quality is less than 50 while name is Aged Brie" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test Item.java" classname="com.gildedrose.GildedRoseTest" time="0.018"/>
+  <testcase name="Test that the quality is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that SellIn is strictly less than 11" classname="com.gildedrose.GildedRoseTest" time="0.006"/>
+  <testcase name="Test that Quality is less than 50 and SellIn is less than 6" classname="com.gildedrose.GildedRoseTest" time="0.007"/>
+  <testcase name="Test that SellIn is strictly less than 0" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="Test that Quality is strictly less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that SellIn is less than 0" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that SellBrie is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
