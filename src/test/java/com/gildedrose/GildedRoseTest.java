@@ -118,10 +118,10 @@ class GildedRoseTest {
   @Test
   @DisplayName("Test that quality is less than 50 while name is Aged Brie")
   void testQual() {
-    Item element = new Item("Aged Brie", -1, 51);
+    Item element = new Item("Aged Brie", -1, 50);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertThat(element.quality, is(51));
+    assertThat(element.quality, is(50));
   }
 
   @Test
@@ -134,12 +134,66 @@ class GildedRoseTest {
   }
 
   @Test
+  @DisplayName("Test that SellIn is strictly less than 0 while name is Aged Brie")
+  void testSellStrict() {
+    Item element = new Item("Aged Brie", 1, 40);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(41));
+  }
+
+  @Test
   @DisplayName("Test that if not Backstage quality = 0")
   void testHand() {
-    Item element = new Item("Sulfuras, Hand of Ragnaros", -1, 51);
+    Item element = new Item("Sulfuras, Hand of Ragnaros", -1, 50);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertThat(element.name, is("Sulfuras, Hand of Ragnaros"));
+  }
+
+  @Test
+  @DisplayName("Test that SellIn is less than 0 for Conjured")
+  void testConjSellIn() {
+    Item element = new Item("Conjured", 1, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.sellIn, is(0));
+  }
+
+  @Test
+  @DisplayName("Test that SellIn is strictly less than 0 for Conjured")
+  void testConjSellInStrict() {
+    Item element = new Item("Conjured", -1, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.sellIn, is(-2));
+  }
+
+  @Test
+  @DisplayName("Test that SellIn is less than 0 for Conjured")
+  void testConjSellIn1() {
+    Item element = new Item("Conjured", 0, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(6));
+  }
+
+  @Test
+  @DisplayName("Test that SellIn is less than 0 for Conjured")
+  void testConjSellIn2() {
+    Item element = new Item("Conjured", 1, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(8));
+  }
+
+  @Test
+  @DisplayName("Test that SellIn is less than 0")
+  void testSellIn1() {
+    Item element = new Item("foo", 1, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(9));
   }
 
   @Test
