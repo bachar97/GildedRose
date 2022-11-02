@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">22</div>
+<div class="counter">21</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.029s</div>
+<div class="counter">0.036s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,75 +76,75 @@
 </tr>
 </thead>
 <tr>
-<td class="success">Test that Quality is less than 50 and name is not Sulfuras</td>
-<td class="success">testAll()</td>
+<td class="success">Test that Aged Brie is unchanged</td>
+<td class="success">testAged()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that Quality is less than 50</td>
+<td class="success">Test that Quality is less than 50 for Backstage</td>
 <td class="success">testBackQual()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test that if not Backstage quality = 0</td>
+<td class="success">testBackQualNull()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test that Quality is less than 50 and SellIn is less than 6 for Backstage</td>
+<td class="success">testBackQualSellLess()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that Quality is strictly less than 50</td>
+<td class="success">Test that Quality is less than 50 and SellIn is strictly less than 6 for Backstage</td>
+<td class="success">testBackQualSellStrictLess()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test that Quality is strictly less than 50 for Backstage</td>
 <td class="success">testBackQualStrictLess()</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that SellIn is less than 11</td>
+<td class="success">Test that SellIn is less than 11 for Backstage</td>
 <td class="success">testBackSell()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that Quality is less than 50 and SellIn is less than 6</td>
-<td class="success">testBackSellLess()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Test that SellIn is strictly less than 11</td>
+<td class="success">Test that SellIn is strictly less than 11 for Backstage</td>
 <td class="success">testBackSellStrict()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Test that Quality is less than 50 and SellIn is strictly less than 6</td>
-<td class="success">testBackSellStrictLess()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test that SellIn is less than 0 for Conjured</td>
-<td class="success">testConjSellIn()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Test that SellIn is less than 0 for Conjured</td>
-<td class="success">testConjSellIn1()</td>
+<td class="success">testConjSell()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test that SellIn is less than 0 for Conjured</td>
-<td class="success">testConjSellIn2()</td>
+<td class="success">testConjSellLess()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test that SellIn is strictly less than 0 for Conjured</td>
-<td class="success">testConjSellInStrict()</td>
-<td class="success">0.013s</td>
+<td class="success">testConjSellStrict()</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that if not Backstage quality = 0</td>
-<td class="success">testHand()</td>
-<td class="success">0s</td>
+<td class="success">Test that SellIn is strictly less than 0 for Conjured</td>
+<td class="success">testConjSellStrictLess()</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -154,51 +154,45 @@
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that quality is less than 50 while name is Aged Brie</td>
-<td class="success">testQual()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Test that quality is strictly less than 50 while name is Aged Brie</td>
-<td class="success">testQualStrict()</td>
+<td class="success">Test that quality is strictly less than 50 for Aged Brie</td>
+<td class="success">testQualAgedStrict()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test that the quality is unchanged</td>
 <td class="success">testQuality()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that SellIn is less than 0</td>
+<td class="success">Test that SellIn is strictly less than 0 for Aged Brie</td>
+<td class="success">testSellAgedStrict()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test that SellIn is less than 0 for Backstage</td>
 <td class="success">testSellBack()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that SellIn is strictly less than 0</td>
+<td class="success">Test that SellIn is strictly less than 0 for Backstage</td>
 <td class="success">testSellBackStrict()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Test that SellBrie is unchanged</td>
-<td class="success">testSellBrie()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test that SellIn is less than 0</td>
-<td class="success">testSellIn1()</td>
+<td class="success">testSellInLess()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test that SellIn is strictly less than 0 while name is Aged Brie</td>
-<td class="success">testSellStrict()</td>
-<td class="success">0s</td>
+<td class="success">Test that Quality is less than 50 and name is not Sulfuras</td>
+<td class="success">testSulfQual()</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -217,7 +211,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 2 Nov 2022, 5:56:01 pm</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 2 Nov 2022, 6:32:24 pm</p>
 </div>
 </div>
 </body>
